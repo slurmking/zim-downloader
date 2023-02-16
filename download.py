@@ -2,8 +2,9 @@ from tqdm import tqdm
 import requests
 from datetime import datetime
 import os
+
 # User settable config variables
-WorkingDir = "/wiki"
+WorkingDir = ""
 wiki_type = "wikipedia_en_all_mini"
 previous_version = ""
 
@@ -62,3 +63,4 @@ else:
         pass
     print(versions)
     os.remove(f"{WorkingDir}/{versions[0]}")
+    
